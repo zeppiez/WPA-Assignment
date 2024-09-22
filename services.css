@@ -85,7 +85,7 @@
 
 .tservices__tipscard p {
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 20px;
     width: 85%;
     font-size: 1.2rem;
@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 375px) {
     .tservices__tipscard p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .tservices__tipscard h2 {
