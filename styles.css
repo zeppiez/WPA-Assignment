@@ -253,11 +253,14 @@
     ),
     url('Health.jpg');
     background-size: cover;
-    position: relative;
-    color:#fff;
-    background-size: cover;
+    background-position: center;
     position: relative;
     color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .services__card:nth-child(2) {
