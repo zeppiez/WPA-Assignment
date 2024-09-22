@@ -1,0 +1,115 @@
+/* Services Section */
+.tservices {
+    background: #d0e8e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+.tservices h1 {
+    background-color: #d0e8e6;
+    background-image: linear-gradient(
+        to right,
+        #33d6a5 0%,
+        #1eb386 0%,
+        #1c9e77 21%,
+        #3da0ad 52%,
+        #1eb386 78%,
+        #20c997 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.tservices__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tservices__tipscard {
+    margin: 2rem;
+    height: 599px;
+    width: 355px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(17, 17, 17, 0.8) 100%
+    );
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.tservices__tipscard:nth-child(2) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 200, 0, 0.4) 0%,
+        rgba(17, 17, 17, 0.8) 100%
+    );
+    color: #fff;
+}
+
+.tservices__tipscard:nth-child(3) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 200, 0.4) 0%,
+        rgba(17, 17, 17, 0.8) 100%
+    );
+    color: #fff;
+}
+
+.tservices__tipscard:nth-child(4) {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(200, 0, 0, 0.4) 0%,
+        rgba(17, 17, 17, 0.8) 100%
+    );
+    color: #fff;
+}
+
+.tservices__tipscard h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 85%;
+    font-size: 1.5rem;
+}
+
+.tservices__tipscard p {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    width: 85%;
+    font-size: 1.2rem;
+}
+
+.tservices__tipscard:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .tservices h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .tservices h1 {
+        font-size: 1.2rem;
+    }
+
+    .tservices__card {
+        width: 300px;
+    }
+}

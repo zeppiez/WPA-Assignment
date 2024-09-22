@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator - We Care</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="bmistyles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400:700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="bmical.html" id="navbar__logo">BMI Calculator</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="tips.html" class="navbar__links">Healthy Tips</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="bmical.html" class="button">BMI Calculator</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>Calculate Your BMI</h1>
+                <h2>Stay Healthy and Fit</h2>
+                <p>Enter your details below to calculate your Body Mass Index (BMI).</p>
+            </div>
+            <div class="main__img--container">
+                <img src="pic1.svg" alt="duly logo" id="main__img">
+            </div>
+        </div>
+    </div> 
+
+    <!-- BMI Calculator Section -->
+    <div class="BMI__services">
+        <h1>What is my category?</h1>
+        <div class="BMI__services__container">
+            <div class="BMI__services__card">
+                <form id="bmiForm">
+                    <label for="weight">Weight (kg):</label>
+                    <input type="number" id="weight" name="weight" pattern="[0-9]+" placeholder="Enter your weight" required>
+                    
+                    <label for="height">Height (cm):</label>
+                    <input type="number" id="height" name="height" pattern="[0-9]+" placeholder="Enter your height" required>
+                    
+                    <button type="button" class="main__btn" onclick="calculateBMI()">Calculate</button>
+                </form>
+                <div id="bmiResult" class="bmi__result">
+                    <svg viewBox="0 0 36 46" class="circular-chart">
+                        <path class="circle-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <path class="circle" stroke-dasharray="0, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"/>
+                        <text x="18" y="16.35" class="text">BMI</text>
+                        <text x="18" y="25" class="text" id="bmiValue">0</text>
+                        <text x="18" y="45" class="bmi-category" id="bmiCategory"></text>
+                    </svg>
+                </div>
+            </div>
+            <div class="BMIcatagory__services__card">
+                <h2>BMI Categories:</h2>
+                <ul class="bmi-categories">
+                    <li class="category underweight"><strong>Underweight:</strong> BMI less than 18.5</li>
+                    <li class="category normal"><strong>Normal weight:</strong> BMI between 18.5 and 24.9</li>
+                    <li class="category overweight"><strong>Overweight:</strong> BMI between 25 and 29.9</li>
+                    <li class="category obese"><strong>Obese:</strong> BMI 30 and above</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer__container">
+            <p>&copy; Created by Tuan Muhammad Aurangzed Bin Tuan Dandan BPJ231210351.<br>All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <script src="bmi.js"></script>
+
+</body>
+</html>

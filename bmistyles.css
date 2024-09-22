@@ -1,0 +1,207 @@
+.BMI__services {
+    background: #d0e8e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.BMI__services h1 {
+    background-color: #d0e8e6;
+    background-image: linear-gradient(
+        to right,
+        #33d6a5 0%,
+        #1eb386 0%,
+        #1c9e77 21%,
+        #3da0ad 52%,
+        #1eb386 78%,
+        #20c997 100%
+    );
+    background-size: 100%;
+    margin-bottom: 5rem;
+    margin-top: 2.5rem;
+    font-size: 2.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.BMI__services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BMI__services__card {
+    width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.BMIcatagory__services__card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.bmi-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bmi-categories .category {
+    background-color: #f8f8f8;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bmi-categories .category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category.underweight {
+    background-color: #add8e6;
+}
+
+.category.normal {
+    background-color: #90ee90;
+}
+
+.category.overweight {
+    background-color: #ffd700;
+}
+
+.category.obese {
+    background-color: #ff6347;
+}
+
+
+.BMIcatagory__services__card h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.BMI__services__card form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.BMI__services__card label {
+    margin-bottom: 10px;
+}
+
+.BMI__services__card input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.BMI__services__card button[type="button"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #20c997;
+    color: #fff;
+    cursor: pointer;
+}
+
+.BMI__services__card button[type="button"]:hover {
+    background-color: #1eb386;
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 80%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 3.8;
+    stroke-linecap: round;
+    stroke: #ff4e42; /* Red for obese */
+    transition: stroke-dasharray 0.6s ease 0s, stroke 0.6s ease;
+}
+
+.text {
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    text-anchor: middle;
+    fill: black;
+}
+
+.bmi-category {
+    font-family: 'Arial', sans-serif;
+    font-size: 10px;
+    text-anchor: middle;
+    fill: black;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 960px) {
+    .BMI__services {
+        height: 65vh;
+    }
+
+    .BMI__services__container {
+        padding: 0%;
+    }
+    
+    .text {
+        font-size: 7px;
+    }
+
+    .text, .bmi-category {
+        font-size: 5px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .BMI__services {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .BMI__services {
+        height: auto;
+    }
+
+    .text {
+        font-size: 5px;
+    }
+}
