@@ -173,10 +173,6 @@
 }
 
 @media screen and (max-width: 960px) {
-    .BMI__services {
-        height: 65vh;
-    }
-
     .BMI__services__container {
         padding: 0%;
     }
@@ -197,10 +193,6 @@
 }
 
 @media screen and (max-width: 480px) {
-    .BMI__services {
-        height: auto;
-    }
-
     .text {
         font-size: 5px;
     }
