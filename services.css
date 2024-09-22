@@ -117,7 +117,7 @@
 
 @media screen and (max-width: 375px) {
     .tservices__tipscard p {
-        font-size: 2vw;
+        font-size: 1.2rem;
     }
 
     .tservices__tipscard h2 {
